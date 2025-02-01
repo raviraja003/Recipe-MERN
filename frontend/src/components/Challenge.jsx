@@ -89,6 +89,7 @@ function Challenge() {
         setIsHistoryLoading(false);
       }
     };
+    console.log("Fetching challenge history ==>", fetchChallengeHistory());
 
     if (isAuthenticated) {
       fetchChallengeHistory();
@@ -109,6 +110,7 @@ function Challenge() {
         setIsSubmissionsLoading(false);
       }
     };
+    console.log("Submissions ==>", fetchSubmissions());
 
     if (isAuthenticated) {
       fetchSubmissions();
