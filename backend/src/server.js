@@ -16,7 +16,8 @@ const app = express();
 // CORS configuration
 app.use(
     cors({
-        origin: "http://localhost:5173", // Your frontend URL
+        origin: "http://kisan251.com:8800", // Your frontend URL
+        // origin: "http://localhost:5173", // Your frontend URL
         // origin: "https://recipe-mern-frontend-three.vercel.app", // Your frontend Live URL
         methods: ["GET", "HEAD"],
         credentials: true,
