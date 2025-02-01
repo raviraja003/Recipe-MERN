@@ -29,6 +29,10 @@ app.use(express.json());
 // Initialize Passport
 app.use(passport.initialize());
 
+app.get("/", (req, res) => {
+    res.send("Hello, World!");
+});
+
 // Routes
 app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/recipes", require("./routes/recipeRoutes"));
