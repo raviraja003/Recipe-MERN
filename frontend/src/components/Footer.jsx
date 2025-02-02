@@ -38,13 +38,13 @@ const Footer = () => {
               className="hover:text-green-400 transition-colors cursor-pointer"
               href="mailto:icoderaj@gmail.com"
             >
-              example@gmail.com
+              example@email.com
             </a>
             <a
               className="hover:text-green-400 transition-colors cursor-pointer"
               href="#"
             >
-              +91 99999 99999
+              +33 333333333
             </a>
             <div className="flex gap-4 mt-2">
               <a
