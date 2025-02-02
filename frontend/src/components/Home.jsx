@@ -49,26 +49,26 @@ const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <div className="min-h-screen flex flex-row justify-between items-center lg:px-32 px-5 bg-[url('./assets/img/hero.jpg')] bg-cover bg-no-repeat">
-        <div className="w-full lg:w-2/3 space-y-5">
-          <h1 className="text-backgroundColor font-semibold text-6xl">
+      <div className="min-h-screen flex flex-col lg:flex-row justify-between items-center lg:px-32 px-5 py-10 bg-[url('./assets/img/hero.jpg')] bg-cover bg-no-repeat">
+        <div className="w-full lg:w-2/3 space-y-5 text-center lg:text-left pt-[110px]">
+          <h1 className="text-backgroundColor font-semibold text-4xl lg:text-6xl">
             Découvrez, Cuisinez et Célébrez les Cultures Culinaires Ensemble !
           </h1>
-          <p className="text-backgroundColor">
+          <p className="text-backgroundColor text-sm lg:text-base">
             Rejoignez notre communauté pour explorer des cuisines variées,
             participer à des défis hebdomadaires générés par IA et partager vos
             créations culinaires.
           </p>
-          <div className="home-book-btn">
+          <div className="home-book-btn flex flex-col lg:flex-row gap-4 justify-center lg:justify-start">
             <a
               href="/Cuisines"
-              className="table-btn text-[#FF6F00] border-2 border-[#FF6F00]  hover:text-[#ffffff] hover:border-[#FF6F00] hover:bg-[#FF6F00]"
+              className="table-btn text-[#FF6F00] border-2 border-[#FF6F00] px-4 py-2 rounded-md hover:text-[#ffffff] hover:border-[#FF6F00] hover:bg-[#FF6F00]"
             >
               <Button title="Découvrez les Cuisines" />
             </a>
             <a
               href="/challenge"
-              className="table-btn text-[#56d15c] border-2 border-[#56d15c] hover:text-[#ffffff] hover:border-[#56d15c] hover:bg-[#56d15c]"
+              className="table-btn text-[#56d15c] border-2 border-[#56d15c] px-4 py-2 rounded-md hover:text-[#ffffff] hover:border-[#56d15c] hover:bg-[#56d15c]"
             >
               <Button title="Lancez le Défi Hebdomadaire IA" />
             </a>
