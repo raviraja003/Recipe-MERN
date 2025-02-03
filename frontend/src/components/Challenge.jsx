@@ -210,7 +210,9 @@ function Challenge() {
     try {
       await axios.post(`/api/challenges/like/${submissionId}`);
       // Refresh submissions
-      const response = await axios.get("/api/challenges/submissions");
+      const response = await axios.get(
+        "http://kisan251.com:8800/api/challenges/submissions"
+      );
       setSubmissions(response.data);
     } catch (error) {
       console.error("Error liking submission:", error);
@@ -226,7 +228,9 @@ function Challenge() {
     try {
       setIsGenerating(true);
       setError(null);
-      const response = await axios.post("/api/recipes/generate");
+      const response = await axios.post(
+        "http://kisan251.com:8800/api/recipes/generate"
+      );
       setWeeklyRecipe(response.data);
     } catch (error) {
       console.error("Error generating recipe:", error);
